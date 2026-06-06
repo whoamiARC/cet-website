@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://www.cettong.cn
+Sitemap: https://www.cettong.cn/sitemap.xml
