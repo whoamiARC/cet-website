@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, FileText, Headphones, Download, ExternalLink } from "lucide-react";
 import { getExamsByLevel, getExam } from "@/lib/library";
+import PdfViewerWrapper from "@/components/pdf-viewer-wrapper";
 
 export const dynamic = "force-static";
 
@@ -62,7 +63,9 @@ export default async function CET6Detail({ params }: { params: Promise<{ testId:
                 <a href={`${base}/test.pdf`} download className="text-xs text-primary font-medium hover:underline flex items-center gap-1"><Download className="h-3 w-3" />下载</a>
               </div>
             </div>
-            <iframe src={`${base}/test.pdf`} className="w-full h-[500px] md:h-[650px]" title="真题试卷" />
+            <div className="p-0">
+              <PdfViewerWrapper pdf={`${base}/test.pdf`} />
+            </div>
           </div>
           <div className="bg-white dark:bg-slate-800 border border-purple-200 dark:border-purple-800 rounded-2xl overflow-hidden">
             <div className="px-4 py-3 border-b border-border flex items-center justify-between">
@@ -72,7 +75,9 @@ export default async function CET6Detail({ params }: { params: Promise<{ testId:
                 <a href={`${base}/answer.pdf`} download className="text-xs text-primary font-medium hover:underline flex items-center gap-1"><Download className="h-3 w-3" />下载</a>
               </div>
             </div>
-            <iframe src={`${base}/answer.pdf`} className="w-full h-[500px] md:h-[650px]" title="答案解析" />
+            <div className="p-0">
+              <PdfViewerWrapper pdf={`${base}/answer.pdf`} />
+            </div>
           </div>
         </div>
 

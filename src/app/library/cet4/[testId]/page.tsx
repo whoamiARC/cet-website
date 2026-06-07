@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, FileText, Headphones, Download, ExternalLink } from "lucide-react";
 import { getExamsByLevel, getExam } from "@/lib/library";
+import PdfViewerWrapper from "@/components/pdf-viewer-wrapper";
 
 export const dynamic = "force-static";
 
@@ -95,7 +96,9 @@ function PdfCard({ title, pdf, color }: { title: string; pdf: string; color: "bl
           <a href={pdf} download className="text-xs text-primary font-medium hover:underline flex items-center gap-1"><Download className="h-3 w-3" />下载</a>
         </div>
       </div>
-      <iframe src={pdf} className="w-full h-[500px] md:h-[650px]" title={title} />
+      <div className="p-0">
+        <PdfViewerWrapper pdf={pdf} />
+      </div>
     </div>
   );
 }
