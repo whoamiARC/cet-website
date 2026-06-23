@@ -51,7 +51,7 @@ export default function AboutPage() {
           <ul className="space-y-2 text-muted">
             <li>💬 微信：coscoscosx</li>
             <li>📧 邮箱：hushuhushuyuyu@gmail.com</li>
-            <li>🐙 <a href="https://github.com/horse-god" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">GitHub · horse-god</a></li>
+            <li>🐙 <a href="https://github.com/whoamiARC" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">GitHub · whoamiARC</a></li>
             <li>⚡ <a href="https://www.ifdian.net/a/iam_ARC" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:underline">爱发电 · 支持作者</a></li>
           </ul>
         </div>

@@ -188,7 +188,7 @@ export default function HomePage() {
                 自建的四六级真题下载站。不需要注册，点开就能下。
               </p>
               <p>
-                <a href="https://github.com/horse-god" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">GitHub 完全开源</a>，
+                <a href="https://github.com/whoamiARC" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">GitHub 完全开源</a>，
                 作者自费承担服务器维护、域名申请等费用。
               </p>
             </div>

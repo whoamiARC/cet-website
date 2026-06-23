@@ -29,7 +29,7 @@ const FAQS = [
     items: [
       { q: "可以商用吗？", a: "本项目代码遵循 MIT 协议可自由使用，但平台内容仅供个人学习参考，请勿用于商业用途或大规模传播。" },
       { q: "如何联系站长？", a: "添加微信 coscoscosx，或发邮件至 hushuhushuyuyu@gmail.com。" },
-      { q: "网站源码可以看吗？", a: "可以，完全开源。GitHub 主页：https://github.com/horse-god，欢迎 Star ⭐" },
+      { q: "网站源码可以看吗？", a: "可以，完全开源。GitHub 主页：https://github.com/whoamiARC，欢迎 Star ⭐" },
     ],
   },
 ];
