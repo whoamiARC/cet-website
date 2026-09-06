@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   keywords: ["英语四级", "英语六级", "CET4", "CET6", "四六级备考", "四六级资讯", "CET通", "免费"],
   authors: [{ name: APP_NAME }],
   creator: APP_NAME,
+  other: {
+    "google-adsense-account": "ca-pub-5246729298526511",
+  },
   openGraph: {
     type: "website",
     locale: "zh_CN",
@@ -79,6 +82,22 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `document.documentElement.classList.add('js')`,
+          }}
+        />
+        <Script
+          id="google-adsense-bootstrap"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function () {
+              if (window.location.origin !== 'https://www.cettong.cn') return;
+              if (document.querySelector('script[data-cettong-adsense]')) return;
+              var script = document.createElement('script');
+              script.async = true;
+              script.crossOrigin = 'anonymous';
+              script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5246729298526511';
+              script.setAttribute('data-cettong-adsense', 'true');
+              document.head.appendChild(script);
+            })();`,
           }}
         />
         <Script
